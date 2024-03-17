@@ -13,12 +13,20 @@ import (
 // AssessmentService
 type AssessmentService struct {
 	querier assessments.Querier
+	broker  domain.MessageBroker
+}
+
+// NewAssessmentService
+func NewAssessmentService(broker domain.MessageBroker) *AssessmentService {
+	return &AssessmentService{
+		broker: broker,
+	}
 }
 
 // InsertValue
 func (as *AssessmentService) InsertValue(ctx context.Context, value *domain.NewAssessmentValue) (*domain.AssessmentValue, error) {
 
-	err := as.validateValue(ctx, value)
+	err := as.isValueOfType(ctx, value)
 	if err != nil {
 		return nil, fmt.Errorf("unable to validate provided assessment value %v", err)
 	}
@@ -38,18 +46,34 @@ func (as *AssessmentService) InsertValue(ctx context.Context, value *domain.NewA
 	timeout, cancel := context.WithTimeout(ctx, time.Second*3)
 	defer cancel()
 
-	sqlValue, err := as.querier.InsertAssessmentValue(timeout, p)
+	sv, err := as.querier.InsertAssessmentValue(timeout, p)
 	if err != nil {
 		return nil, fmt.Errorf("failed to insert assessment value %v", err)
 	}
 
+	envbytes, err := json.Marshal(&domain.ValueEnvelope{
+		AssessmentID: sv.AssessmentID.String(),
+		AttributeID:  sv.AssessmentAttributeID.String(),
+		ValueID:      sv.ID.String(),
+		Value:        valuebytes,
+		CreatedAt:    sv.CreatedAt.Time,
+	})
+	if err != nil {
+		return nil, fmt.Errorf("failed to marshal value envelope %v", err)
+	}
+
+	t := domain.CreateAssessmentAttributeValue.String()
+	as.broker.Publish(ctx, t, envbytes)
+
 	return &domain.AssessmentValue{
-		Value:     sqlValue.Input,
-		CreatedAt: sqlValue.CreatedAt.Time,
+		Value:     sv.Input,
+		CreatedAt: sv.CreatedAt.Time,
 	}, nil
 }
 
-func (as *AssessmentService) validateValue(ctx context.Context, value *domain.NewAssessmentValue) error {
+// internal package function to verify provided value
+// is of the assessment attribute data type
+func (as *AssessmentService) isValueOfType(ctx context.Context, value *domain.NewAssessmentValue) error {
 
 	timeout, cancel := context.WithTimeout(ctx, time.Second*3)
 	defer cancel()
