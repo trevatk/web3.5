@@ -3,12 +3,14 @@ package messagebroker
 import (
 	"context"
 	"fmt"
+	"os"
+	"path/filepath"
 	"time"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	"github.com/trevatk/wallet"
+	wallet "github.com/trevatk/go-wallet"
 	"github.com/trevatk/web3.5/internal/adapter/setup"
 	"github.com/trevatk/web3.5/internal/core/domain"
 
@@ -17,18 +19,30 @@ import (
 
 // BlockBroker client implementation
 type BlockBroker struct {
-	conn *grpc.ClientConn
-	addr string
+	conn   *grpc.ClientConn
+	wallet *wallet.Wallet
 }
 
 // New return new block broker client
 func New(cfg *setup.Config) (*BlockBroker, error) {
-	// TODO:
-	// persist wallet
-	w := wallet.NewWallet()
-	addr, err := w.Address()
+
+	path := filepath.Clean(cfg.MessageBroker.WalletPath)
+	_, err := os.Stat(path)
+	if err != nil && err == os.ErrNotExist {
+		// create new wallet and marshal to file
+		w := wallet.New()
+		err = w.MarshalToFile(path)
+		if err != nil {
+			return nil, fmt.Errorf("failed to marshal wallet to file %v", err)
+		}
+
+	} else if err != nil {
+		return nil, fmt.Errorf("failed to get wallet file info %v", err)
+	}
+
+	w, err := wallet.UnmarshalFromFile(path)
 	if err != nil {
-		return nil, fmt.Errorf("failed to get wallet address %v", err)
+		return nil, fmt.Errorf("failed to unmarshal wallet from file %v", err)
 	}
 
 	conn, err := grpc.Dial(
@@ -39,8 +53,8 @@ func New(cfg *setup.Config) (*BlockBroker, error) {
 	}
 
 	return &BlockBroker{
-		addr: addr,
-		conn: conn,
+		wallet: w,
+		conn:   conn,
 	}, nil
 }
 
