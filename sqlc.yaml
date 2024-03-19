@@ -1,12 +1,12 @@
 version: "2"
 sql:
 - schema: migrations
-  queries: sqlc/queries/assessments.sql
+  queries: sqlc/queries/surveys.sql
   engine: "postgresql"
   gen:
     go:
-      package: "assessments"
-      out: "internal/adapter/port/database/repository/assessments"
+      package: "surveys"
+      out: "internal/adapter/port/database/repository/surveys"
       sql_package: "pgx/v5"
       emit_interface: true
       overrides:

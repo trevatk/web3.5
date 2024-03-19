@@ -25,7 +25,7 @@ func main() {
 		fx.Provide(logging.NewLogger),
 		fx.Provide(setup.New),
 		fx.Provide(fx.Annotate(messagebroker.New, fx.As(new(domain.MessageBroker)))),
-		fx.Provide(application.NewAssessmentService),
+		fx.Provide(application.NewSurveyService),
 		fx.Provide(fx.Annotate(router.New, fx.As(new(http.Handler)))),
 		fx.Provide(server.New),
 		fx.Invoke(registerHooks),
