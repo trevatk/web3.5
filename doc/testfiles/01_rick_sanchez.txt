@@ -1,0 +1,80 @@
+Demographics:
+
+    Name: Rick Sanchez
+    Age: 70
+    Gender: Male
+    Occupation: Inventor/Scientist
+    Address: 1313 Portal Lane, Dimension C-137
+    Phone: (555) 867-5309
+
+Medical History:
+
+    Chronic alcoholism
+    Dimensional travel-related injuries
+    Genetic mutations (due to experimentation)
+
+Chief Compliant (CC):
+
+    Patient presents with recurring episodes of nausea, dizziness, and visual disturbances.
+
+Major Surgical or Invasive Procedure:
+
+    Cybernetic enhancements and replacements
+
+History of Present Illness (HPI):
+
+    Mr. Sanchez reports experiencing frequent episodes of nausea, dizziness, and visual disturbances, often triggered by interdimensional travel or intense experiments in his laboratory.
+
+Review of Systems (ROS):
+
+    Constitutional: No fever or chills reported.
+    Eyes: Visual disturbances noted.
+    Ears, Nose, Throat: No specific complaints reported.
+    Cardiovascular: No chest pain or palpitations reported.
+    Respiratory: No cough or shortness of breath reported.
+    Gastrointestinal: Nausea reported.
+    Genitourinary: No dysuria or hematuria reported.
+    Musculoskeletal: No joint pain or stiffness reported.
+    Neurological: Dizziness reported as described in HPI.
+
+Physical Examination (PE):
+
+    Vital Signs: BP 150/95 mmHg, HR 85 bpm, RR 18 breaths/min, Temp 98.6°F
+    General: Patient appears intellectually superior but slightly disheveled, with unkempt hair and lab coat.
+    Head: Normal cephalic index, with cranial structures intact.
+    Eyes: Pupils equal, round, and reactive to light, though possibly dilated due to recent interdimensional travel.
+    Cardiovascular: Regular rate and rhythm, no audible murmurs.
+    Respiratory: Clear to auscultation bilaterally.
+    Abdomen: Soft, non-tender, non-distended. Liver palpable due to enlarged size (potential result of long-term alcohol abuse).
+
+Assessment and Plan (A&P):
+
+    Differential Diagnosis:
+        Motion sickness related to dimensional travel
+        Alcohol-induced vestibular disturbances
+        Neurological sequelae from genetic mutations
+    Plan:
+        Order comprehensive metabolic panel (CMP) to assess liver function
+        Prescribe antiemetic medication for nausea
+        Advise patient to reduce alcohol intake and practice safer interdimensional travel techniques
+
+Additional Sections:
+
+    Social History: Patient is known for his eccentric behavior, heavy drinking, and disregard for societal norms. No stable familial or social relationships reported.
+    Family History: Unknown due to complex familial dynamics across multiple dimensions.
+
+Notes:
+
+    Patient exhibits reluctance to follow medical advice and may require additional counseling or intervention to address underlying behavioral issues.
+
+Social History:
+
+    Mr. Sanchez is renowned for his groundbreaking scientific achievements and eccentric behavior within the scientific community. He is known to have a strained relationship with his family, including his daughter Beth and grandson Morty. He often engages in reckless and dangerous activities, including interdimensional travel and experiments with unknown consequences.
+
+Family History:
+
+    Mr. Sanchez's family history is complex and fragmented across various dimensions. Limited information is available, but there are indications of genetic predispositions to certain medical conditions, including alcoholism and neurological disorders.
+
+Notes:
+
+    Given Mr. Sanchez's unconventional lifestyle and propensity for high-risk behaviors, ongoing monitoring and intervention may be necessary to address his medical needs effectively. Collaborative care with specialists in multidimensional medicine may be warranted to provide comprehensive treatment and support.
