@@ -1,0 +1,79 @@
+Demographics:
+
+    Name: Morty Smith
+    Age: 14
+    Gender: Male
+    Occupation: High School Student
+    Address: 1313 Portal Lane, Dimension C-137
+    Phone: (555) 555-5555
+
+Medical History:
+
+    Anxiety disorder
+    History of accidental injuries during interdimensional adventures
+
+Chief Compliant (CC):
+
+    Patient presents with complaints of persistent anxiety and occasional panic attacks.
+
+Major Surgical or Invasive Procedure:
+
+    None reported
+
+History of Present Illness (HPI):
+
+    Morty reports experiencing recurrent episodes of anxiety, characterized by excessive worry, restlessness, and fearfulness. He also describes occasional panic attacks, with symptoms such as shortness of breath, chest pain, and trembling.
+
+Review of Systems (ROS):
+
+    Constitutional: No fever or chills reported.
+    Eyes: No visual disturbances reported.
+    Ears, Nose, Throat: No specific complaints reported.
+    Cardiovascular: No chest pain or palpitations reported.
+    Respiratory: No cough or shortness of breath reported.
+    Gastrointestinal: No nausea, vomiting, or diarrhea reported.
+    Genitourinary: No dysuria or hematuria reported.
+    Musculoskeletal: No joint pain or stiffness reported.
+    Neurological: Anxiety and occasional panic attacks reported as described in HPI.
+
+Physical Examination (PE):
+
+    Vital Signs: BP 120/80 mmHg, HR 80 bpm, RR 16 breaths/min, Temp 98.6°F
+    General: Patient appears nervous and fidgety, with signs of hypervigilance.
+    Head: Normocephalic and atraumatic.
+    Eyes: Pupils equal, round, and reactive to light.
+    Cardiovascular: Regular rate and rhythm, no murmurs appreciated.
+    Respiratory: Clear to auscultation bilaterally.
+    Abdomen: Soft, non-tender, non-distended.
+
+Assessment and Plan (A&P):
+
+    Differential Diagnosis:
+        Generalized anxiety disorder (GAD)
+        Panic disorder
+        Adjustment disorder with anxiety
+    Plan:
+        Refer patient to a mental health specialist for further evaluation and management of anxiety symptoms
+        Consider cognitive-behavioral therapy (CBT) and/or pharmacotherapy, such as selective serotonin reuptake inhibitors (SSRIs), for symptom management
+        Educate patient on relaxation techniques and coping strategies for managing anxiety
+
+Additional Sections:
+
+    Social History: Morty is a high school student who experiences frequent stressors related to academic pressure, family dynamics, and his involvement in interdimensional adventures with his grandfather, Rick.
+    Family History: Limited information available, but there are indications of familial stressors and potential genetic predispositions to anxiety-related disorders.
+
+Notes:
+
+    Given Morty's young age and the impact of his tumultuous experiences, a comprehensive approach to addressing his mental health needs is essential. Collaborative care involving mental health professionals, educators, and family members may be beneficial in providing support and promoting his overall well-being.
+
+Social History:
+
+    Morty is a typical teenager attending Harry Herpson High School, where he struggles with both academic and social pressures. He is known for his close relationship with his eccentric grandfather, Rick Sanchez, with whom he frequently embarks on interdimensional adventures. These adventures often result in dangerous and traumatic experiences, contributing to Morty's overall stress and anxiety levels.
+
+Family History:
+
+    Morty comes from a family with complex dynamics, including his parents, Jerry and Beth Smith, and his sister, Summer. There are indications of familial conflicts and underlying stressors, which may have contributed to Morty's development of anxiety symptoms.
+
+Notes:
+
+    Morty's mental health requires ongoing monitoring and support, particularly given the unique challenges he faces due to his involvement in Rick's adventures. Collaborative efforts involving mental health professionals, educators, and family members are crucial for addressing his anxiety and promoting his resilience and well-being.
